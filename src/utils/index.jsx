@@ -1,0 +1,1 @@
+export {default as wordsList} from './data'
