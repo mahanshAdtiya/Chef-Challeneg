@@ -1,1 +1,1 @@
-export {default as wordsList} from './words.json';
+export { words } from "./words";

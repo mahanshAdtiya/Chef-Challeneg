@@ -1,0 +1,14 @@
+.keyboard-button {
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  height: 20px;
+  width: 30px;
+}
+
+.keyboard-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
