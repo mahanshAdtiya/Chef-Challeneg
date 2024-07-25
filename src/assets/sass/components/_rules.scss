@@ -4,5 +4,22 @@
 
   .instruction-heading {
     text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .rules-container {
+    font-size: 0.7rem;
+    .instruction-heading {
+      font-size: 1rem;
+    }
+    .subheading {
+      font-size: 0.8rem;
+    }
   }
 }
