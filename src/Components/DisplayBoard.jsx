@@ -10,7 +10,7 @@ const DisplayBoard = ({ word, guessedWord }) => {
     <div className="display-board-container">
       {word.split("").map((letter, index) => (
         <span key={index} className="display-board-letter">
-          {guessedWord.has(letter) ? letter : EMPTY}
+          {guessedWord.has(letter) ? letter.toUpperCase() : EMPTY}
         </span>
       ))}
     </div>

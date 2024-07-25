@@ -50,8 +50,12 @@ function App() {
 
   const game = (
     <div className="game">
-      <DisplayBoard word={word.word} guessedWord={guessedWord} />
-      <Input getInput={getInput} />
+      <div>
+        <DisplayBoard word={word.word} guessedWord={guessedWord} />
+      </div>
+      <div>
+        <Input getInput={getInput} />
+      </div>
     </div>
   );
 
@@ -64,26 +68,28 @@ function App() {
   );
 
   return (
-    <div className="hangman-container">
-      <div>
-        <Header attempts={MAX_WRONG_GUESSES - wrongGuesses} />
-        <button className="rules-btn" onClick={handleClick}>
-          Rules
-        </button>
-        {showRules && (
-          <div className="overlay">
-            <div className="modal">
-              <Rules />
-              <button className="close-btn" onClick={handleClick}>
-                &times;
-              </button>
-            </div>
-          </div>
-        )}
-        <Man wrongGuesses={wrongGuesses} />
-        {winnerOrLoser}
+    <>
+      <div className="hangman-container">
+        <div className={`content ${showRules ? "blurred" : ""}`}>
+          <Header attempts={MAX_WRONG_GUESSES - wrongGuesses} />
+          <Man className="man-fixed" wrongGuesses={wrongGuesses} />
+          {winnerOrLoser}
+        </div>
       </div>
-    </div>
+      <button className="rules-btn" onClick={handleClick}>
+        Rules
+      </button>
+      {showRules && (
+        <div className="overlay">
+          <div className="modal">
+            <Rules />
+            <button className="close-btn" onClick={handleClick}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
