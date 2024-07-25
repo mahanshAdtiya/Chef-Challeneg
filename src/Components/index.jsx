@@ -1,0 +1,9 @@
+export {default as Header} from './Header';
+export {default as Input} from './Input';
+export {default as DisplayBoard} from './DisplayBoard';
+export {default as GameOver} from './GameOver';
+export {default as KeyBoard} from './Keyboard';
+export {default as KeyBoardButton} from './KeyboardButton';
+export {default as Man} from './Man';
+export {default as Rules} from './Rules';
+export {default as Winner} from './Winner';

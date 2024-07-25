@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./assets/sass/base.scss";
 import { getRandomWord } from "./utils/random.utils";
-import Header from "./Components/Header";
-import Rules from "./Components/Rules";
-import Man from "./Components/Man";
-import DisplayBoard from "./Components/DisplayBoard";
-import Input from "./Components/Input";
-import Winner from "./Components/Winner";
-import GameOver from "./Components/GameOver";
+import {Header, Rules, Man, DisplayBoard, Input, Winner, GameOver} from './Components';
 
 const MAX_WRONG_GUESSES = 6;
 
