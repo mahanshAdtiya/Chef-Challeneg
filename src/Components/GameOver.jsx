@@ -2,10 +2,12 @@ import React from "react";
 
 const GameOver = ({ word, resetGame }) => {
   return (
-    <div>
-      <h1>Game Over</h1>
-      <p>The word was: {word}</p>
-      <button onClick={resetGame}>Play Again</button>
+    <div className="over-container">
+      <h1 className="over-heading">Game Over</h1>
+      <p className="over-content">The word was: {word}</p>
+      <button className="over-btn" onClick={resetGame}>
+        Play Again
+      </button>
     </div>
   );
 };

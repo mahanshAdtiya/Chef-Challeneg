@@ -71,8 +71,12 @@ function App() {
     <>
       <div className="hangman-container">
         <div className={`content ${showRules ? "blurred" : ""}`}>
-          <Header attempts={MAX_WRONG_GUESSES - wrongGuesses} />
-          <Man className="man-fixed" wrongGuesses={wrongGuesses} />
+          <div>
+            <Header attempts={MAX_WRONG_GUESSES - wrongGuesses} />
+          </div>
+          <div>
+            <Man wrongGuesses={wrongGuesses} />
+          </div>
           {winnerOrLoser}
         </div>
       </div>

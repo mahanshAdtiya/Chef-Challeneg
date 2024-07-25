@@ -2,10 +2,12 @@ import React from "react";
 
 const Winner = ({ word, resetGame }) => {
   return (
-    <div>
-      <h1>Winner!</h1>
-      <p>The word was: {word}</p>
-      <button onClick={resetGame}>Play Again</button>
+    <div className="winner-container">
+      <h1 className="winner-heading">Winner!</h1>
+      <p className="winner-content">The word was: {word}</p>
+      <button className="winner-btn" onClick={resetGame}>
+        Play Again
+      </button>
     </div>
   );
 };

@@ -1,6 +1,29 @@
 .keyboard-container {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(7, 40fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
 }
+
+@media (max-width: 400px) {
+  .keyboard-container {
+    .keyboard {
+      grid-template-columns: repeat(4, 40fr);
+    }
+  }
+}
+
+// A  B  C  D  E  F  G
+// H I  J  K  L  M  N
+// O  P  Q  R  S  T  U
+// V  W  X  Y  Z

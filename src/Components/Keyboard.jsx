@@ -14,15 +14,15 @@ const Keyboard = ({ getInput }) => {
 
   const letters = getLetters();
 
-  const buttons = letters.map((letter) => (
-    <KeyboardButton
-      getInput={getInput}
-      letter={letter}
-      key={letter.charCodeAt(0)}
-    />
-  ));
-
-  return <div className="keyboard-container">{buttons}</div>;
+  return (
+    <div className="keyboard-container">
+      <div className="keyboard">
+        {letters.map((letter) => (
+          <KeyboardButton getInput={getInput} letter={letter} key={letter} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Keyboard;

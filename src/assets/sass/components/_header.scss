@@ -1,8 +1,53 @@
 .header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 
-  .life-counter {
-    color: red;
+  .header-heading {
+    font-size: 2rem;
     font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .header-content {
+    font-size: 1.8rem;
+    color: white;
+
+    .life-counter {
+      color: red;
+      font-weight: bolder;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .header {
+    margin-bottom: 15px;
+    .header-heading {
+      font-size: 1.4rem;
+      top: 50px;
+    }
+
+    .header-content {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  .header {
+    .header-heading {
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+
+    .header-content {
+      font-size: 0.7rem;
+    }
   }
 }

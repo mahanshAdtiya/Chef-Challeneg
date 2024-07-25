@@ -1,6 +1,6 @@
 import React from "react";
 
-const EMPTY = "___";
+const EMPTY = "__";
 
 const DisplayBoard = ({ word, guessedWord }) => {
   console.log("Guessed Letters: ", guessedWord);
