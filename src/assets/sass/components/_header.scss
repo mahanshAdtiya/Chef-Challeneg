@@ -10,8 +10,9 @@
     font-weight: bolder;
     color: white;
     position: relative;
-    top: 40px;
-    margin-bottom: 60px;
+    top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
   }
 
   .header-content {
@@ -29,12 +30,12 @@
   .header {
     margin-bottom: 15px;
     .header-heading {
-      font-size: 1.4rem;
-      top: 50px;
+      font-size: 1.5rem;
+      top: 20px;
     }
 
     .header-content {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -42,12 +43,12 @@
 @media (max-width: 399px) {
   .header {
     .header-heading {
-      font-size: 0.8rem;
+      font-size: 1rem;
       margin-bottom: 20px;
     }
 
     .header-content {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
   }
 }
