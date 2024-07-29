@@ -5,9 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100%;
   width: 100%;
-  position: relative;
 
   .content {
     transition: filter 0.3s ease-in-out;
@@ -19,7 +18,7 @@
 }
 
 .rules-btn {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 10px;
   color: white;

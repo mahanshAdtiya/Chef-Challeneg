@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ attempts }) => {
+const Header = ({ attempts, time }) => {
   return (
     <div className="header">
       <div className="header-heading">
@@ -10,6 +10,7 @@ const Header = ({ attempts }) => {
         <h3>
           You have <span className="life-counter">{attempts}</span> lives left
         </h3>
+        <p style={{display: 'flex', justifyContent: 'center'}}>Time: <span style={{color: 'teal'}}> {time}</span></p>
       </div>
     </div>
   );

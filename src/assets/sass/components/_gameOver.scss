@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
+  margin-bottom: 20px;
   .over-heading {
     font-size: 2rem;
     font-weight: 700;
@@ -14,6 +14,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
+    margin: 0;
   }
 
   .over-btn {
