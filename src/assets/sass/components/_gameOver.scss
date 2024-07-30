@@ -1,0 +1,35 @@
+.over-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  .over-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .over-content {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+  }
+
+  .over-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}

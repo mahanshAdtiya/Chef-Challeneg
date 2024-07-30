@@ -1,0 +1,17 @@
+.man-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .man {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-linecap: round;
+
+    .hide {
+      display: none;
+    }
+  }
+}

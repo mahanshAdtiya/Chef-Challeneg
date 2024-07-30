@@ -1,0 +1,23 @@
+.display-board-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .display-board-letter {
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .display-board-container {
+    .display-board-letter {
+      padding: 0.8rem;
+      font-size: 1.3rem;
+    }
+  }
+}
