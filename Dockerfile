@@ -1,18 +1,10 @@
-# Step 1: Build the app using Node.js
-FROM node:20.9.0-alpine AS build
+FROM node:20.9.0-alpine
 
-WORKDIR /chefchallenge
 COPY . /chefchallenge
-RUN npm install
-RUN npm run build
-
-# Step 2: Set up Nginx to serve the static files
-FROM nginx:alpine
-
-# Copy the built files from the previous stage to Nginx's HTML directory
-COPY --from=build /chefchallenge/dist /usr/share/nginx/html/chefchallenge
-
+WORKDIR /chefchallenge/
 EXPOSE 4015
+RUN npm i
+RUN npm run build
+RUN npm install -g serve
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["serve", "-s", "-l", "4015", "dist/"]
