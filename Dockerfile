@@ -12,10 +12,6 @@ FROM nginx:alpine
 # Copy the built files from the previous stage to Nginx's HTML directory
 COPY --from=build /chefchallenge/dist /usr/share/nginx/html/chefchallenge
 
-# Copy the custom Nginx configuration (nginx.conf)
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Expose port 80 (Nginx default)
 EXPOSE 4015
 
 # Start Nginx
