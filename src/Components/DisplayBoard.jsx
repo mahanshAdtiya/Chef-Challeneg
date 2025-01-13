@@ -3,8 +3,8 @@ import React from "react";
 const EMPTY = "__";
 
 const DisplayBoard = ({ word, guessedWord }) => {
-  // console.log("Guessed Letters: ", guessedWord);
-  // console.log("Word: ", word);
+  console.log("Guessed Letters: ", guessedWord);
+  console.log("Word: ", word);
 
   return (
     <div className="display-board-container">
