@@ -1,7 +1,7 @@
 import React from "react";
 import KeyboardButton from "./KeyboardButton";
 
-const Keyboard = ({ getInput }) => {
+const Keyboard = ({ getInput, answer}) => {
   const getLetters = () => {
     let result = [];
 
@@ -18,7 +18,7 @@ const Keyboard = ({ getInput }) => {
     <div className="keyboard-container">
       <div className="keyboard">
         {letters.map((letter) => (
-          <KeyboardButton getInput={getInput} letter={letter} key={letter} />
+          <KeyboardButton getInput={getInput} letter={letter} key={letter} answer={answer}/>
         ))}
       </div>
     </div>
