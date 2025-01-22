@@ -1,5 +1,4 @@
-@import "./components/base.scss";
-@import "./pages/base.scss";
+@use "./components/base.scss";
 
 .hangman-container {
   display: flex;

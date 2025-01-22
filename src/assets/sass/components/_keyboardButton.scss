@@ -1,8 +1,6 @@
 .keyboard-button {
-  background-color: gray;
   border: 2px solid white;
   border-radius: 3px;
-  color: white;
   height: 35px;
   width: 40px;
   font-size: 1rem;
@@ -13,17 +11,20 @@
   align-items: center;
   justify-content: center;
 
-  &.pressed {
-    background-color: black;
+  &.neutral {
+    background-color: gray;
     color: white;
-    cursor: not-allowed;
+  }
+  &.correct {
+    background-color: #40845e;
+    color: white;
+  }
+  &.wrong {
+    background-color: #833f3f;
+    color: white;
   }
 }
 
-.keyboard-button:hover {
-  background-color: black;
-  color: white;
-}
 
 @media (max-width: 400px) {
   .keyboard-button {

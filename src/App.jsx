@@ -80,7 +80,7 @@ function App() {
         <DisplayBoard word={word.word} guessedWord={guessedWord} />
       </div>
       <div>
-        <Input getInput={getInput} />
+        <Input getInput={getInput} answer={word.word.toLowerCase()}/>
       </div>
     </div>
   );
